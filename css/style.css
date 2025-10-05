@@ -115,19 +115,66 @@ body {
   padding: 30px;
   box-shadow: 0 6px 18px rgba(15, 23, 42, 0.04);
 }
+
+/* card aside */
+.card.aside {
+  background-image: url("https://upload.wikimedia.org/wikipedia/id/6/66/45tahunPKI.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+  justify-content: center;
+}
+
+.card.aside::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(
+    30,
+    30,
+    30,
+    0.55
+  ); /* overlay gelap agar teks tetap terbaca */
+  z-index: 0;
+}
+
+.card.aside > * {
+  position: relative;
+  z-index: 1;
+}
+
 .aside {
   position: relative;
 }
+
 .card h2 {
   margin-bottom: 12px;
   color: #8b0000;
 }
+
+.card.aside:hover {
+  transform: scale(1.04) translateY(-8px);
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.18), 0 2px 8px rgba(0,0,0,0.08);
+  z-index: 10;
+  transition: transform 0.25s cubic-bezier(.4,2,.3,1), box-shadow 0.25s;
+}
+
+/* Pastikan .card.aside punya transition */
+.card.aside {
+  /* ...existing code... */
+  transition: transform 0.25s cubic-bezier(.4,2,.3,1), box-shadow 0.25s;
+}
+
 .meta {
   color: #6b7280;
   font-size: 14px;
   margin-bottom: 12px;
 }
 
+/* blockquote */
 blockquote {
   position: relative;
   margin: 20px 0;
