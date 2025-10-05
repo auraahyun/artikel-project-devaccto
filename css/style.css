@@ -88,7 +88,7 @@ body {
 
 /* hero content */
 .hero {
-  background-image: url("https://cdn.beritamerdeka.net/files/images/20221001-img-20221001-wa0010.jpg");
+  background-image: url("https://raw.githubusercontent.com/auraahyun/artikel-project-devaccto/refs/heads/artikel/assets/image.jpg");
   background-size: cover;
   padding: 56px 20px;
   color: #fff;
@@ -164,7 +164,6 @@ body {
 
 /* Pastikan .card.aside punya transition */
 .card.aside {
-  /* ...existing code... */
   transition: transform 0.25s cubic-bezier(.4,2,.3,1), box-shadow 0.25s;
 }
 
