@@ -130,6 +130,7 @@ body {
 
 /* sejarah */
 .main {
+  display: flex;
   max-width: 1100px;
   margin: 28px auto;
   padding: 0 20px;
