@@ -8,22 +8,24 @@
 
 /* layout */
 body {
-  background: #f7f7f8;
+  background: whitesmoke;
   color: #1f2937;
   line-height: 1.6;
   font-size: 16px;
-  min-height: 100vh;
 }
 
 /* navbar */
 .navbar {
-  background: linear-gradient(50deg, #ffffff, #bebebe);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.95),
+    rgba(255, 255, 255, 0.9)
+  );
   box-shadow: 0 2px 6px rgba(16, 24, 40, 0.06);
   position: sticky;
   top: 0;
   z-index: 50;
 }
-
 .container {
   max-width: 1100px;
   margin: 0 auto;
@@ -41,8 +43,8 @@ body {
   border-radius: 6px;
   font-weight: 600;
 }
-.nav-links a:hover{
-  background:rgba(139,0,0,0.08);
+.nav-links a:hover {
+  background: rgba(139, 0, 0, 0.08);
   color: #8b0000;
 }
 
@@ -65,7 +67,7 @@ body {
 .nav-links.mobile {
   display: none;
   flex-direction: column;
-  background: #8a8787;
+  background: #ffffff;
   position: absolute;
   top: 64px;
   right: 20px;
@@ -88,7 +90,7 @@ body {
 .hero {
   background-image: url("https://raw.githubusercontent.com/auraahyun/artikel-project-devaccto/refs/heads/artikel/assets/image.jpg");
   background-size: cover;
-  padding: 16px 20px;
+  padding: 56px 20px;
   color: #fff;
 }
 
@@ -150,7 +152,7 @@ body {
 
 .card h2 {
   margin-bottom: 12px;
-  color: #303030;
+  color: #8b0000;
 }
 
 .card.aside:hover {
@@ -235,16 +237,19 @@ blockquote {
   }
 }
 
-@media (max-width:880px){
-  .nav-links {display:none;}   /* menu biasa sembunyi */
-  .hamburger {display:flex;}   /* tombol hamburger muncul */
+@media (max-width: 880px) {
+  .nav-links {
+    display: none;
+  } /* menu biasa sembunyi */
+  .hamburger {
+    display: flex;
+  } /* tombol hamburger muncul */
 }
 
 .footer {
   margin-top: 40px;
   padding: 20px;
   text-align: center;
-  color: #ffffff;
+  color: #6b7280;
   font-size: 14px;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
